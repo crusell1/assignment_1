@@ -11,16 +11,21 @@
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin=""
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet-sidebar@0.2.4/src/L.Control.Sidebar.css"
+    />
 
     <script
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""
     ></script>
+    <script src="https://unpkg.com/leaflet-sidebar@0.2.4/src/L.Control.Sidebar.js"></script>
 
     <style>
       #mapDiv {
-        height: 500px;
+        height: 100vh;
       }
 
       #tasks {
@@ -31,13 +36,15 @@
         right: 0;
         top: 0;
         margin: 10px;
-        border-radius: 10px;
-        min-height: 200px;
+        border-radius: 15px;
+        min-height: 100px;
       }
     </style>
   </head>
   <body>
     <div id="mapDiv"></div>
+
+    <div id="sidebar"></div>
 
     <div id="tasks">
       <h2>Tasks</h2>
@@ -50,5 +57,9 @@
 
     <script src="{{ url_for('static', filename='map.js') }}"></script>
     <script src="{{ url_for('static', filename='task1.js') }}"></script>
+    <script src="{{ url_for('static', filename='task2.js') }}"></script>
+    <script src="{{ url_for('static', filename='task3.js') }}"></script>
+    <script src="{{ url_for('static', filename='task4.js') }}"></script>
+    <script src="{{ url_for('static', filename='task5.js') }}"></script>
   </body>
 </html>

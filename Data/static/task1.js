@@ -1,3 +1,7 @@
+document.getElementById("t1").addEventListener("click", function () {
+  map.flyTo([60.60458302175006, 15.631808631054772], 15);
+});
+
 // Markerpoint
 L.marker([60.485407, 15.431148])
   .addTo(map)
@@ -136,7 +140,7 @@ var polylinePoints = [
   [60.60397798481142, 15.633973273047218],
   [60.604507026589374, 15.635096445106882],
 ];
-var polyline = L.polyline(polylinePoints, { color: 'red' })
+var polyline = L.polyline(polylinePoints, { color: "red" })
   .addTo(map)
   .bindPopup(
     "<h3>Borlänge - Falun</h3><img src='/static/img/buss.jpg' width='150px'>",
@@ -149,7 +153,7 @@ var polygonPoints = [
   [60.604235, 15.634085],
   [60.604051, 15.634427],
 ];
-var polygon = L.polygon(polygonPoints, { color: 'blue' })
+var polygon = L.polygon(polygonPoints, { color: "blue" })
   .addTo(map)
   .bindPopup(
     "<h3>Knutpunkten</h3><img src='/static/img/knutpunkten.jpg' width='150px'>",
