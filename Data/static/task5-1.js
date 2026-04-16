@@ -31,7 +31,6 @@ var fueldonutCluster = L.DonutCluster(
   },
   {
     // 'key' talar om för pluginet vilken egenskap i din data som ska användas för gruppering.
-    // I din fuel.js ligger märket under egenskapen "brand".
     key: "brand",
 
     // 'arcColorDict' definierar färgerna för varje kategori.
