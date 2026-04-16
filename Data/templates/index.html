@@ -11,17 +11,33 @@
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin=""
     />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet-sidebar@0.2.4/src/L.Control.Sidebar.css"
-    />
-
     <script
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""
     ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet-sidebar@0.2.4/src/L.Control.Sidebar.css"
+    />
     <script src="https://unpkg.com/leaflet-sidebar@0.2.4/src/L.Control.Sidebar.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css"
+    />
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@kalisio/leaflet.donutcluster@1.1.0/src/Leaflet.DonutCluster.css"
+    />
+    <script src="https://unpkg.com/@kalisio/leaflet.donutcluster@1.1.0/src/Leaflet.DonutCluster.js"></script>
 
     <style>
       #mapDiv {
@@ -53,6 +69,7 @@
       <button id="t3">Task 3</button>
       <button id="t4">Task 4</button>
       <button id="t5">Task 5</button>
+      <button id="t5-1">Task 5.1</button>
     </div>
 
     <script src="{{ url_for('static', filename='map.js') }}"></script>
@@ -62,5 +79,6 @@
     <script src="{{ url_for('static', filename='task3.js') }}"></script>
     <script src="{{ url_for('static', filename='task4.js') }}"></script>
     <script src="{{ url_for('static', filename='task5.js') }}"></script>
+    <script src="{{ url_for('static', filename='task5-1.js') }}"></script>
   </body>
 </html>
