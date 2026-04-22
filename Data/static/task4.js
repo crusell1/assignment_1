@@ -1,8 +1,8 @@
-document.getElementById("t4").addEventListener("click", function () {
-  map.flyTo([60.576950065293175, 15.608385640423718], 20);
+document.getElementById('t4').addEventListener('click', function () {
+  map.flyTo([60.576950065293175, 15.608385640423718], 17);
 });
 
-var imageUrl = "/static/img/CityGross.png",
+var imageUrl = '/static/img/CityGross.png',
   imageBounds = [
     [60.57765590972669, 15.608125386640017],
     [60.57764536878386, 15.608125386640017],

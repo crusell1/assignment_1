@@ -17,6 +17,8 @@
       crossorigin=""
     ></script>
 
+    <script src="../static/turf.min.js" charset="utf-8"></script>
+
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet-sidebar@0.2.4/src/L.Control.Sidebar.css"
@@ -38,7 +40,6 @@
       href="https://unpkg.com/@kalisio/leaflet.donutcluster@1.1.0/src/Leaflet.DonutCluster.css"
     />
     <script src="https://unpkg.com/@kalisio/leaflet.donutcluster@1.1.0/src/Leaflet.DonutCluster.js"></script>
-
     <style>
       #mapDiv {
         height: 100vh;
@@ -74,6 +75,7 @@
 
     <script src="{{ url_for('static', filename='map.js') }}"></script>
     <script src="{{ url_for('static', filename='fuel.js') }}"></script>
+    <script src="{{ url_for('static', filename='supermarket.js') }}"></script>
     <script src="{{ url_for('static', filename='task1.js') }}"></script>
     <script src="{{ url_for('static', filename='task2.js') }}"></script>
     <script src="{{ url_for('static', filename='task3.js') }}"></script>

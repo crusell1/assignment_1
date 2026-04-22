@@ -1,4 +1,4 @@
-document.getElementById("t5").addEventListener("click", function () {
+document.getElementById('t5').addEventListener('click', function () {
   map.flyTo([59.3609882, 18.0576769], 10);
 
   if (map.hasLayer(fuelCluster)) {
@@ -16,8 +16,8 @@ fuelCluster.addLayer(fuelLayer); // lägg till fuelLayer i fuelCluster, så att 
 
 fuelLayer.eachLayer(function (layer) {
   // loopar igenom varje lager i fuelLayer
-  layer.on("click", function () {
-    var popupContent = "<h3>" + layer.feature.properties.name + "</h3>";
+  layer.on('click', function () {
+    var popupContent = '<h3>' + layer.feature.properties.name + '</h3>';
     layer.bindPopup(popupContent).openPopup(); // först binder en popup till lagret, och sedan öppnas den direkt när lagret klickas på
   });
 });
