@@ -1,5 +1,5 @@
 document.getElementById("t4").addEventListener("click", function () {
-  map.flyTo([60.576950065293175, 15.608385640423718], 15);
+  map.flyTo([60.576950065293175, 15.608385640423718], 20);
 });
 
 var imageUrl = "/static/img/CityGross.png",
