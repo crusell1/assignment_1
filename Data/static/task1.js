@@ -1,15 +1,20 @@
-document.getElementById("t1").addEventListener("click", function () {
+// När man trycker på "Task 1"-knappen så flyger man till Falun
+document.getElementById('t1').addEventListener('click', function () {
   map.flyTo([60.60458302175006, 15.631808631054772], 15);
 });
 
 // Markerpoint
+// Skapar en leaflet marker på Högskolan Dalarna
 L.marker([60.485407, 15.431148])
+  // Lägger till markern på kartan
   .addTo(map)
+  // Kopplar en popup ruta när markern trycks på, visar text och bild
   .bindPopup(
     "<h3>Högskolan Dalarna</h3><img src='/static/img/hogskolan_borlange.jpg' width='150px'>",
   );
 
 // Polyline
+// Skapar en variabel som håller koordinaterna till polylinjen
 var polylinePoints = [
   [60.485606249658616, 15.431438839759977],
   [60.4853541295943, 15.432357448928286],
@@ -140,21 +145,28 @@ var polylinePoints = [
   [60.60397798481142, 15.633973273047218],
   [60.604507026589374, 15.635096445106882],
 ];
-var polyline = L.polyline(polylinePoints, { color: "red" })
+// Skapar en leaflet polyline mellan Högskolan Dalarna och Knutpunkten i Falun
+L.polyline(polylinePoints, { color: 'red' })
+  // Lägger till linjen på kartan
   .addTo(map)
+  // Kopplar en popup ruta när linjen trycks på, visar text och bild
   .bindPopup(
     "<h3>Borlänge - Falun</h3><img src='/static/img/buss.jpg' width='150px'>",
   );
 
 // Polygon
+// Skapar en variabel som håller koordinaterna till polygonen
 var polygonPoints = [
   [60.604785, 15.636088],
   [60.604809, 15.635542],
   [60.604235, 15.634085],
   [60.604051, 15.634427],
 ];
-var polygon = L.polygon(polygonPoints, { color: "blue" })
+// Skapar en leaflet polygon över Knutpunkten i Falun
+L.polygon(polygonPoints, { color: 'blue' })
+  // Lägger till polygonen på kartan
   .addTo(map)
+  // Kopplar en popup ruta när polygonen trycks på, visar text och bild
   .bindPopup(
     "<h3>Knutpunkten</h3><img src='/static/img/knutpunkten.jpg' width='150px'>",
   );

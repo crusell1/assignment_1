@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 1</title>
 
+    <!-- Hämtar Leaflet -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -17,14 +18,17 @@
       crossorigin=""
     ></script>
 
+    <!-- Hämtar Turf -->
     <script src="../static/turf.min.js" charset="utf-8"></script>
 
+    <!-- Hämtar plugin till Leaflet med sidopanelen -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet-sidebar@0.2.4/src/L.Control.Sidebar.css"
     />
     <script src="https://unpkg.com/leaflet-sidebar@0.2.4/src/L.Control.Sidebar.js"></script>
 
+    <!-- Hämtar plugin till Leaflet med markercluster -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css"
@@ -35,11 +39,14 @@
     />
     <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
 
+    <!-- Hämtar plugin till Leaflet med donutcluster -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/@kalisio/leaflet.donutcluster@1.1.0/src/Leaflet.DonutCluster.css"
     />
     <script src="https://unpkg.com/@kalisio/leaflet.donutcluster@1.1.0/src/Leaflet.DonutCluster.js"></script>
+
+    <!-- Stylar kartan och uppgiftsmenyn -->
     <style>
       #mapDiv {
         height: 100vh;
@@ -59,10 +66,13 @@
     </style>
   </head>
   <body>
+    <!-- Ritar upp kartan -->
     <div id="mapDiv"></div>
 
+    <!-- Ritar upp sidopanelen -->
     <div id="sidebar"></div>
 
+    <!-- Ritar upp uppgiftsmenyn med knappar för samtliga uppgifter -->
     <div id="tasks">
       <h2>Tasks</h2>
       <button id="t1">Task 1</button>
@@ -73,6 +83,7 @@
       <button id="t5-1">Task 5.1</button>
     </div>
 
+    <!-- Laddar in samtliga js-filer -->
     <script src="{{ url_for('static', filename='map.js') }}"></script>
     <script src="{{ url_for('static', filename='fuel.js') }}"></script>
     <script src="{{ url_for('static', filename='supermarket.js') }}"></script>
